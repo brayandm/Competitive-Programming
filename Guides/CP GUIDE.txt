@@ -1,0 +1,460 @@
+Competitive Programming Guide:
+
+Number Theory:
+
+	Theorems:
+	* Fermat's Little Theorem
+	* Euler's Theorem (generalization of Fermat's Little Theorem)
+	* Wilson's Theorem
+	* Pick's Theorem
+	* Bertrand's Postulate (there always exists at least one prime number P such that "N < P < 2N")
+	
+	Functions:
+	* Euler Phi Function
+	* Divisor Function
+	* Mobius Function
+	* Multiplicative or Completely Multiplicative Functions
+	
+	Formulas:
+	* Euclid's formula, if "a^2 + b^2 = c^2" then exists 'n' and 'm' such that "a = 2mn", "b = m^2 - n^2", "c = m^2 + n^2" 
+	* Summation formula for any 'L' and 'R' is equal to "(L+R)*(R-L+1)/2"
+	* Sum of phi(x) for each x|N is equal to N
+	* When you need to find the sum of F[i]*i for each i between 1 and N but before you need to 
+	process the array F in the following way F[i] -= F[x] for each x such that i < x and i|x (processing 'i' in
+	reverse order from N to 1), in this case this problem is equal to find the sum of F[i]*phi(i) for each i between 1 and N
+	Problem example: https://codeforces.com/contest/1575/problem/G
+	
+	Mobius:
+	* Mobius Function
+	* Mobius Inversion
+	* Dirichlet Convolution
+	
+	Prime Numbers:
+	* Miller Rabin and Pollard Rho (for factorize numbers)
+	* Sieve of Eratosthenes
+	* Linear Sieve
+	
+	Modular Equations:
+	* Chinese Remainder Theorem (all elements are prime, all elements are pairwise coprime)
+	* Discrete Logarithm
+	* Primitive Roots
+	* Discrete Roots
+	
+	Modular Inverse:
+	* Fermat's Little Theorem
+	* Extended Euclidean Algorithm
+	* Recurrence Formula: inv[i] = (MOD-MOD/i)*inv[MOD%i]%MOD
+	
+	Diophantic Equations:
+	* Linear Diophantic Equations (Count number of solutions in a range or multi-ranges)
+	* Extended Euclidean Algorithm
+	
+	Euclid's Stuff:
+	* Euclidean Algorithm (for computing GCD(A,B), complexity O(logfib(min(A,B))
+	* Extended Euclidean Algorithm
+
+	Others:
+	* Montgomery Multiplication
+	* The Harmonic Lemma
+	* Dirichlet Convolution
+	* Binary Exponentiation
+	* Pythagorean Triples
+	* Equation A^2 + B^2 = C^2 (there are few solutions for a given C)
+	* Harmonic Series Partition, floor(N/i) 1 <= i <= N, there are only 2*sqrt(N) different values.
+	The sums of these series is approximately N*log(N)
+	* (a-b)|(aⁿ-bⁿ) always
+	* Counting Primes Problem O(N^(2/3))
+
+Combinatorics:
+
+	Theorems:
+	* Binomial Theorem
+	* Multinomial Theorem
+
+	Numbers:
+	* Combinatorial Numbers
+	* Catalan Numbers and Catalan Convolution (https://codeforces.com/blog/entry/87585)
+	* Fibonacci Numbers
+	* Stirling Numbers of the First Kind
+	* Stirling Numbers of the Second Kind
+	
+	Other:
+	* Principle of Inclusion and Exclusion
+	* Extended Principle of Inclusion and Exclusion for hypersets
+	Problem example: Count the number of permutations with at least K fixed points
+	* Generating functions
+	* Pascal's Trianglec
+	* Burnside's Lemma
+	* Sum of Kth powers (x1^K + x2^K + ... + xn^K)
+	* Given N,X,K Summation of (i^K)*comb(N,i)*(X^i) for 0 <= i <= N
+	
+Algebra:
+	
+	Interpolation:
+	* Lagrange Interpolation (https://codeforces.com/blog/entry/82953)
+	* Lagrange Interpolation Arithmetic (https://codeforces.com/blog/entry/82953)
+	* Lagrange Interpolation O(N*log(N)^2) (https://cp-algorithms.com/algebra/polynomial.html)
+	* Multi-point Evaluation (https://codeforces.com/blog/entry/94143)
+	
+	Fast Walsh Hadamard Transform (FWHT):
+	* Similar to FFT, but when you multiply v1*X^A and v2*X^B the result is (v1*v2)*X^(A op B) for 'op' equal to
+	XOR, OR, AND, depending on what is needed
+	* You can generalize to any set of dimensions DxDxDxDx...xD and in each dimension specify
+	the operation to be performed (https://codeforces.com/blog/entry/96003)
+	Problem example: https://evaluator.hsin.hr/tasks/HONI212216set/
+	* You can also do operations under any module
+	
+	Fast Fourier Transform (FFT):
+	* Multiply two long numbers (https://www.spoj.com/problems/VFMUL/)
+	* Given two strings S and T, find all occurrences of T in S
+	* You toss a 6-sided dice N times (N <= 200000). Find the probability that
+	the number of 6s is prime and the number of 5s is prime. Answer modulo 1e9+7
+	* Pattern matching with wildcards in both strings like AB?A??, BA?
+	* You’re given a binary string of length N <= 200000. For every K from 0 to N,
+	count substrings with exactly K zeros (https://codeforces.com/problemset/problem/993/E)
+	* Speed up the following program:
+	for(i = 0..n-1) for(j = 0..n-1) if(i < j) c[i+j] += a[i] * b[j];
+	
+	Linear Recurrences:
+	
+		Linear Recurrence Algorithms:
+		* Matrix Exponentiation
+		* Berlekamp-Massey Algorithm
+		* Kitamasa Method
+		
+		Other:
+		* Characteristic Polynomial
+		* Generating function
+	
+	Other:
+	*Fast Inverse Square Root
+	*Given the expression (A + B)ⁿ if we perform the binary exponentiation and carry at all 
+	times A and B then A is going to be equal to the sum of the odd positions in its binomial 
+	expansion and B is going to be equal to the sum of the even positions in its binomial expansion.
+	We also use this to power expressions of the form. Irrational: A + B*sqrt(C), Complex: A + B*i
+
+Probability:
+
+	* Modeling with graphs
+	* Markov Chains
+	* Gaussian Elimination to solve Markov Chains
+	* Bayes's Theorem
+	* Linearity of Expectation
+	* Binary Search on Probability or Expected Value. This is done by setting a value
+	and recalculating everything based on that value, then we reach a contradiction, 
+	based on that we increase or decrease the value. When you model probability graphs
+	and in this graph there is a cycle, this technique can be used.
+	Problem example: https://codeforces.com/gym/103049/problem/G
+	* When we have a probability or expected value problem on a graph that consists of a
+	cycle and you can model the equations as "Ax = Ay*a + b", then a possible solution would
+	be to substitute the equations for putting them in function of Ax, for example if we have
+	"Ax = Ay*a + b" and "Ay = Az*c + d", then Ax in function of Az would be "Ax = (Az*c + d)*a + b"
+	which is equal to "Ax = Az*(c*a) + (d*a + b)", then "Ax = Az*x + y" where "x = c*a" and "y = d*a + b",
+	so we can put everything in function of Ax since the graph is a cycle, this same idea can be used
+	for functional graphs or trees where we want to quickly obtain the dependencies of one variable
+	on another, to do that we can use Sparse Table in the similar way we calculate the LCA of a tree.
+	Problem example: https://codeforces.com/contest/1623/problem/D
+
+Binary Numbers:
+
+	XOR:
+	* When we are solving problems about inverting edges 0-1 in a tree, where the operations are
+	to invert all the edges on the path from A to B, we can model this problem keeping the parity
+	of the number of incident edges equal to 1 for each node, let us denote this as P(x), if we 
+	keep this the problem would be equivalently to invert the values of P(A) and P(B), then we can
+	say that all edges are equal to 0 if and only if P(x) is 0 for each node, also the minimum number
+	of paths that we need to invert for turning all edges equal to 0 is equal to the number of P(x) 
+	equal to 1 divided by 2. A trick for problems about inverting edges in general graphs would be to
+	reduce them into trees by getting any spaning tree.
+	* When you solve problems about inverting 0-1 values in a 2D matrix, where the operations are to
+	select a submatrix and invert the values within it, this problem can be transformed into this one,
+	suppose that our initial matrix is A, then we create another matrix B where B[i][j] is equal to the
+	parity of (A[i][j] + A[i][j+1] + A[i+1][j] + A[i+1][j+1]). Now when we perform an operation on the
+	subarray (a,b,c,d) the problem would be equivalent to inverting the values of B[a-1][b-1], B[a-1][d],
+	B[c][b-1] and B[c][d]. All the values of the matrix A are equal to 0 if and only if all the values
+	of matrix B are equal to 0.
+	* When we are solving problems about xor in trees, a possible approach would be to model the problem 
+	as xor of prefixes from a specific vertex to the root of the tree, so to know the xor of a path between
+	two vertices, it would be enough to calculate the xor of the prefixes of both vertices.
+	Problem example: https://codeforces.com/contest/1615/problem/D
+	* There are xor problems that can be solved using algorithms like "Checking Bipartite Graph" and "Two-Sat"
+	Problem example: https://codeforces.com/contest/1615/problem/D
+	* When we solve problems on graphs where each edge can have one of K colors and we want to know if there
+	is a path from A to B with a specified frequency parity. This can be solved by finding any path, and using
+	xor basis with the simple cycles of the DFS tree, (cycles formed by backedges).
+	Problem example: https://official.contest.yandex.com/opencupXXII/contest/37831/problems/C/
+	
+	Other:
+	* Gray Code
+	* Iterating over submasks, complexity O(3^N): for(int submask = mask ; submask > 0 ; submask = (submask-1)&mask)
+
+
+Data Structures:
+	
+	Segment Trees:
+	* Classic Segment Tree
+	* Coordinate compression (Normalization)
+	* Segment Tree with lazy propagation
+	* Segment Tree with implicit binary search
+	* Segment Tree with bitmask
+	* Segment Tree with offline queries
+	* Segment Tree with vectors
+	* Segment Tree with another data structure
+	* Segment Tree 2D
+	* Tournament Tree
+	* Segment Tree on a rooted tree for subtree queries (Euler Tour on tree)
+	* Segment Tree for dynamic programming optimizations
+	* Segment Tree for geometry in sweep line algorithms
+	* Segment Tree as secondary structure of other structures like Heavy-Light Decomposition
+	* Dynamic Segment Tree
+	* Persistent Segment Tree
+	* Segment Tree with Fractional Cascading
+	* Polynomial/Fibonacci Segment Tree
+	* Quad-Tree
+	* Segment Tree Beats
+	
+	Segment Tree + Euler Tour:
+	* When you have to solve some problem about dynamic programming on trees where a node depends
+	on its ancestors, a possible technique to use is to make a Segment Tree on the Euler Tour of 
+	the tree, so when we calculate the state of a node we can make the trancisions and update all
+	the nodes in a subtree. An example would be when we have a problem that we have to use Convex
+	Hull Trick, we can build a Segment Tree of convex hulls, then we update in each step all the 
+	convex hulls of a subtree.
+	
+	C++ STL:
+	* Set, unordered set
+	* Multiset, unordered multiset
+	* Map, unordered map
+	* Multimap, unordered multimap
+	* Order statistic set
+	* Priority queue
+	* Queue, Deque, Stack
+	* Pair, Tuple
+	* Vector
+	* String
+	* Bitset
+	* List
+	
+	Monotonic Set:
+	* Used to keep ordered pairs (X,Y) and (A,B) such that X <= A and Y <= B and doing queries 
+	to obtain some pair (X,Y) with maximum Y such that X <= VAL
+	Problem example: https://codeforces.com/contest/1575/problem/L
+	* Used to calculate the LIS problem
+	Problem example: https://codeforces.com/gym/102423/problem/G
+	
+	Convex Hull Trick:
+	* Implementation 1, Complexity O(N+Q) with increasing or decreasing slopes, and increasing or decreasing question points
+	* Implementation 2, Complexity O(N*log(N)+Q) with disordered slopes, and increasing or decreasing question points
+	* Implementation 3, Complexity O(N+Q*log(N)) with increasing or decreasing slopes, and disordered question points
+	* Convex Hull Full Dynamic, complexity O(N*log(N)+Q*log(N)^2)
+	* Used for DP optimizations
+	
+	Disjoint Set Union (DSU):
+	* Path Compression
+	* Small to Large
+	* DSU on trees (Heavy Light technique, Small to Large)
+	* DSU with Rollbacks
+	* Keeps the largest component, number of components, bipartite check, the elements of each component
+	
+	Treap:
+	* Implicit and Explicit Treap
+	* Treap with Lazy
+	* Persistent Treap
+	
+	Hash Tables:
+	* Complexity insert, erase, find O(1)
+	
+	Heavy Light Decomposition:
+	* Decomposes the tree into segments such that each path in the tree is made up of at most log(N) parts of some segments
+	* Allows to perform queries and updates on paths, supported by another data structure
+	* Allows to perform queries and updates on subtrees, supported by another data structure 
+	(the tree needs to be processed in the form of the Eulerian path to be able to process subtrees)
+	* The Heavy Light is always supported by another data structure, the most used is the Segment Tree
+	* Used to solve the Largest Common Ancestor problem
+	* Used to solve Convex Hull Trick problems on trees in complexity O(N*log(N)*(complexity_of_query))
+	* Used for saving memory in problem of type "insert and rollback" (https://codeforces.com/gym/103119/problem/I)
+	
+	Mo's Algorithm:
+	* Complexity: O(N*N/BLOCK_SIZE + Q*BLOCK_SIZE)
+	* Choose the optimal BLOCK_SIZE = N/sqrt(Q)
+	* Sort the R of the queries by parity of L/BLOCK_SIZE
+	* Hilbert Order: used for sorting queries, same complexity than normal Mo's Algorithm with optimal BLOCK_SIZE
+	* Technique of Data Structure with rollbacks, you can maintain the intervals if the Data Structure has rollback function.
+	You can do "insert with rollbacks" or "erase with rollbacks"
+	
+	Other:
+	* Slope Trick
+	* Cartesian Tree
+
+Dynamic Programming:
+
+	* DP with connected components (https://codeforces.com/blog/entry/92602)
+	* Hirschberg's Trick, DP[N][K] with O(N) memory optimization (https://codeforces.com/blog/entry/47247?#comment-316200)
+
+Greedy Algorithms:
+
+	Leaf Cover on Tree:
+	* We have a rooted tree and we want to maximize the number of vertices that have a marked leaf
+	in its subtree if we can only mark K leaves.
+	* This problem can be solved greedily for each K step by step from 1 to "number of leaves", where
+	in one step we look for the longest descending path available and blocking it, repeating the algorithm
+	again until all the vertices of the tree are blocked, the answer for a specified K is the number of
+	vertices blocked in the K-th step.
+	Problem example: https://codeforces.com/contest/1615/problem/E
+
+Graph Theory:
+
+	Kruskal:
+	*Solves the minimax path problem
+
+	Flow Theory:
+
+		Max-flow Algorithms:
+		* Ford-Fulkerson O(flow*(V+E))
+		* Edmonds-Karp O(V*E^2)
+		* Push-Relabel O(V*E + V^2*sqrt(E))
+		* Dinic O(V^2*E)
+		* Dinic on unit network O(sqrt(V)*E)
+		* Dinic with Link/Cut Tree O(V*E*log(V))
+		* MPM O(V^3)
+		* Minimum-Cost Flow O((V*E)^2)
+		* Gomory-Hu Tree O((V-1)*(max-flow call))
+		* Stoer-Wagner O(V*E + V^2*log(V))
+
+		Methods:
+		* Closure problem
+		* Flows with demands (works only with acyclic graphs)
+		* Minimum-Cost Maximum-Flow (works with any type of graph and with positive and negative edges)
+		* Multi-source/Multi-sink
+		* Node with capacity
+		* Bipartite graph modeling
+		* Assignment problem modeling
+		* Work with the residual graph
+		* Find min-cut in the network
+		* Flows with heuristics using *IDA
+		* Solves many problems of directing edges in graphs
+
+		Theorems:
+		* Max-flow min-cut theorem
+		* König theorem
+		* Dilworth theorem
+
+		Assignment Problem:
+		* Flow network modeling
+		* Hungarian O(N^2*M)
+
+		Bipartite Matching:
+		* Flow network modeling
+		* Assignment problem modeling
+		* Hopcroft-Karp O(E*sqrt(V))
+		* Hall's Marriage Theorem
+
+		Linear Programming:
+		* Simplex Method O((N+M)^2*M)
+		* Simplex Method Integer O(2^M*(N+M)^2*M)
+	
+	Other:
+	*MST solves the minimax path problem
+	
+	Bipartite Graph:
+	* Used to solve equations of binary variables with restrictions of type "X xor Y = 1" or "X xor Y = 0"
+	creating the graph and checking if it is bipartite, use the technique of adding a fake node to solve
+	the equation "X xor Y = 0"
+	* The fake node technique is used for when we want two nodes to belong to the same set, we create
+	a fake node and link both nodes to it.
+	* We can check if a graph is bipartite using "Two-Sat"
+	
+	Planar Graph:
+	* Euler Characteristic
+	
+	Eulerian Path:
+	
+	Eulerian Cycle:
+	
+	Boolean Satisfiability Two-Sat:
+	* To solve Boolean equations of the form "(A1 op B1) and (A2 op B2) and .... and (An op Bn)".
+	With op = {and,or,xor}
+	
+	Depth First Search:
+	* Sometimes graph problems can be solved by analyzing the structure of the "DFS Tree"
+		
+Linear Programming:
+	
+	Simplex Method:
+	* Complexity O((N+M)^2*M)
+	* Solves systems of linear inequalities
+	* Maximizes or minimizes linear expressions with any type of constraint
+	* Constraints are linear inequalities ('<', '>', '<=', '>=') or equalities ('==')
+	* Variables can be negative
+	* Simplex Method Integer O(2^M*(N+M)^2*M)
+		
+Game Theory:
+
+	Nim's Game:
+	* Grundy Numbers
+	* Sprague-Grundy Theorem
+	* In graphs the maximum grundy number is bounded by min(number_of_nodes, sqrt(number_of_edges))
+	* One technique is to calculate grundy numbers for small cases and look for patterns
+	
+	Other:
+	* Modeling with graphs
+	* Losing and winning states, connections between them, how to find them, graph modeling
+	* Games between two people with possible infinite cycles. Determine who wins or if players fall into a cycle.
+	Model the game with a graph and apply some algorithm.
+	Problem example: https://codeforces.com/contest/919/problem/F
+	* Nash Equilibrium
+	
+String:
+
+	Suffix Automaton:
+	
+Search:
+
+	* Binary Search
+	* Ternary Search
+	* Parametric search
+		
+Geometry:
+	
+	Algorithms:
+	* Convex Hull O(N*log(N))
+	* Fortune's Algorithm (for computing Voronoi Diagram and Delaunay Triangulation)
+	
+	Other:
+	* Geometric Inversion
+	* Point-Line Duality
+	* Voronoi Diagram
+	* Delaunay Triangulation
+	
+Miscellany:
+
+	Longest Increasing Subsequence 2D:
+	* You can use a Segment Tree of monotonic sets, complexity O(N*log(N)^2)
+	Problem example: https://codeforces.com/contest/1575/problem/L
+	
+	Average trick:
+	* In many problems about average in intervals of an array, where we have to look
+	for the maximum average interval or look for the intervals with an average greater than
+	a certain X, an approach would be to use the formula "(Tj-Ti)/(j-i)", where 'Tk' is
+	the sum of the prefix up to 'k', then we can create the following inequality: "(Tj-Ti)/(j-i) >= X"
+	which if we adjust it, it would become "(Tj-X*j)-(Ti-X*i) >= 0", which is equal to
+	"(Tj-X*j) >= (Ti-X*i)", this can be easily solved since it would only be to build an
+	array 'arr' where "arr[i] = Ti-X*i" and calculate the pairs (i,j) such that "arr[i] <= arr[j]"
+	Problem example: https://codeforces.com/contest/1616/problem/D
+	
+	Methods of proof:
+	* Direct proof
+	* Proof by mathematical induction
+	* Proof by contraposition
+	* Proof by contradiction
+	* Proof by construction
+	* Proof by exhaustion
+	* Probabilistic proof
+	* Combinatorial proof
+	* Nonconstructive proof
+	* Statistical proofs in pure mathematics
+	* Computer-assisted proofs
+	
+	
+	
+	

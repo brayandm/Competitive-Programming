@@ -1,0 +1,36 @@
+2-sat: 2-satisfiability
+binary search: Binary search
+bitmasks: Bitmasks
+brute force: Brute force
+chinese remainder theorem: Сhinese remainder theorem
+combinatorics: Combinatorics
+constructive algorithms: Constructive algorithms
+data structures: Heaps, binary search trees, segment trees, hash tables, etc
+dfs and similar: Dfs and similar
+divide and conquer: Divide and Conquer
+dp: Dynamic programming
+dsu: Disjoint set union
+expression parsing: Parsing expression grammar
+fft: Fast Fourier transform
+flows: Graph network flows
+games: Games, Sprague–Grundy theorem
+geometry: Geometry, computational geometry
+graph matchings: Graph matchings, König's theorem, vertex cover of bipartite graph
+graphs: Graphs
+greedy: Greedy algorithms
+hashing: Hashing, hashtables
+implementation: Implementation problems, programming technics, simulation
+interactive: Interactive problem
+math: Mathematics including integration, differential equations, etc
+matrices: Matrix multiplication, determinant, Cramer's rule, systems of linear equations
+meet-in-the-middle: Meet-in-the-middle
+number theory: Number theory: Euler function, GCD, divisibility, etc
+probabilities: Probabilities, expected values, statistics, random variables, etc
+schedules: Scheduling Algorithms
+shortest paths: Shortest paths on weighted and unweighted graphs
+sortings: Sortings, orderings
+string suffix structures: Suffix arrays, suffix trees, suffix automatas, etc
+strings: Prefix- and Z-functions, suffix structures, Knuth–Morris–Pratt algorithm, etc
+ternary search: Ternary search
+trees: Trees
+two pointers: Two pointers

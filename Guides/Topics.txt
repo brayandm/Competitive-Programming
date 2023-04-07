@@ -1,0 +1,168 @@
+Basico:
+General:
+-detalles e ideas con STL(+order statistics)
+
+Teoria de juegos:
+-ejemplos, posiciones G-P y juego de NIM
+
+Teoria de numeros:
+-Pequeno teorema de Fermat(inversa modular) y Phi de Euler(implementacion eficiente)
+
+Combinatoria:
+-Coeficientes binomiales(implementacion eficiente) y numeros de catalan, problemas de conteo
+
+Grafos:
+-SCC, AP y Bridges
+-Kruskal y Prim
+-Dijkstra y Floyd-Warshall
+
+Estrutura de datos:
+-Disjoint Sets y el rollback trick
+-ABI y ST(en formas mas cochinas)
+-Estructuras monotonas + sliding window
+-SQRT Decomposition
+
+Strings:
+-Hashing(tambien ver hashing de conjuntos)
+-Trie
+-Manacher 
+
+Math:
+-Matrix Exponenciation
+-Gauss + bitset trick(sobre todo problemas)
+
+Geometria:
+-Basics(dot & cross product) + line segment intersection codes + pick theorem
+-Convex Hull
+-Sweep Line
+
+DP:
+-DP con bitmask(mas trucos y observaciones sobre la complejidad)
+-Meet in the Middle
+-DP+estructura de datos
+
+
+
+AVANZADO:
+Teoria de juegos:
+-Teoria: MEX y Grundy
+
+Teoria de numeros:
+-Ecuaciones diofanticas
+-Primitive root, discrete logarithm y Pollard Rho y Rabin Miller(conocer y tirar caja negra)
+
+Greedy:
+-(this is lo que se te ocurra)(algunas ideas generales)
+
+Grafos:
+-Euler Tour 
+-Flujo: problemas clasicos de matching, corte minimo y flujo maximo-costo minimo
+-2-SAT
+
+Estrutura de datos:
+-MO Algorithm
+-RMQ(sparse table) y LCA en O(1)(euler tour), y problemas con euler tour on tree
+-Treap
+-Persistencia
+-HLD
+-Centroid Decomposition
+
+Strings:
+-Suffix Array(los dos)
+-KMP y Aho-Corasick
+
+Math:
+-Probabilidades(ejemplos)
+-FFT
+-FMT
+
+Geometria:
+-Angular sort(o Radix Sweep line)
+
+DP:
+-DP en arboles(con las observaciones sobre la complejidad)
+-DP de digitos
+-DP con Reconstruccion y DP combinatorias constructivas
+-DP optimizations(CHT)
+-DP optimizations(divide&conquer y aliens trick)
+
+IDEAS:
+-(algunos problemas interesantes)
+
+Ya despues de todo esto lo que toca es hacer contest con nosotros
+
+
+
+
+
+TODO:
+General:
+-detalles e ideas con STL(+order statistics)
+
+Teoria de juegos:
+-ejemplos, posiciones G-P y juego de NIM
+-Teoria: MEX y Grundy
+
+Teoria de numeros:
+-Pequeno teorema de Fermat(inversa modular) y Phi de Euler(implementacion eficiente)
+-Ecuaciones diofanticas
+-Primitive root, discrete logarithm y Pollard Rho y Rabin Miller(conocer y tirar caja negra)
+
+Combinatoria:
+-Coeficientes binomiales(implementacion eficiente) y numeros de catalan, problemas de conteo
+
+Greedy:
+-(this is lo que se te ocurra)
+
+Grafos:
+-SCC, AP y Bridges
+-Kruskal y Prim
+-Dijkstra y Floyd-Warshall
+-Euler Tour 
+-Flujo: problemas clasicos de matching, corte minimo y flujo maximo-costo minimo
+-2-SAT
+
+Estrutura de datos:
+-Disjoint Sets y el rollback trick
+-ABI y ST(en formas mas cochinas)
+-Estructuras monotonas + sliding window
+-SQRT Decomposition
+-MO Algorithm
+-RMQ(sparse table) y LCA en O(1)(euler tour), y problemas con euler tour on tree
+-Treap
+-Persistencia
+-HLD
+-Centroid Decomposition
+
+Strings:
+-Hashing(tambien ver hashing de conjuntos)
+-Trie
+-Manacher 
+-Suffix Array(los dos)
+-KMP y Aho-Corasick
+
+Math:
+-Matrix Exponenciation
+-Gauss + bitset trick(sobre todo problemas)
+-Probabilidades(ejemplos)
+-FFT
+-FMT
+
+Geometria:
+-Basics(dot & cross product) + line segment intersection codes + pick theorem
+-Convex Hull
+-Sweep Line
+-Angular sort(o Radix Sweep line)
+
+DP:
+-DP con bitmask(mas trucos y observaciones sobre la complejidad)
+-Meet in the Middle
+-DP+estructura de datos
+-DP en arboles(con las observaciones sobre la complejidad)
+-DP de digitos
+-DP con Reconstruccion y DP combinatorias constructivas
+-DP optimizations(CHT)
+-DP optimizations(divide&conquer y aliens trick)
+
+IDEAS:
+-(algunos problemas interesantes)

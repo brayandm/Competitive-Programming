@@ -99,7 +99,12 @@ def normalize_name(name):
 extension = '.sublime-snippet'
 new_extension = '.code-snippets'
 
-path = get_dir_snippets_with_extension('CP snippet', extension)
+folder = 'Sublime-snippets'
+new_folder = 'Code-snippets'
+
+os.system('cp -r ' + folder + ' ' + new_folder)
+
+path = get_dir_snippets_with_extension(new_folder, extension)
 
 for file_path in path:
 

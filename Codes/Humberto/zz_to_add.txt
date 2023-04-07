@@ -1,0 +1,12 @@
+important
+- treap
+- implicit ST
+- PST
+- ST 2D
+- CHT
+- geometry basics
+
+maybe
+- bridges, art points
+- scc
+

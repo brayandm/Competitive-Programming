@@ -1,0 +1,22 @@
+must-haves in team reference document:
+- 2D geometry
+- simple 3D geometry
+- FFT
+- BST and/or LinkCut
+- Pollard's Rho
+- 2-SAT
+- C++ ordered_set
+- suffix array
+- other string stuff?
+- flow
+- math formulas
+
+Important points about the team reference document:
+1) You need to understand your codes.
+ 2) Test: solve problems online & stress-test yourself.
+ 3) Fast.
+ 4) Concise.
+ 5) Modular.
+6) Algos that are frequent, short and/or difficult.
+
+judge.yosupo.jp //library checker

@@ -1,0 +1,57 @@
+Data Structures:
+
+	Basic:
+	* Cumulative Table: 
+	  - 1D
+	  - 2D
+	* Coordinate compression
+	* BitSets
+	* Disjoint Set:
+		- small to large
+		- path compresion
+	* Fenwick Tree
+	* Segment Tree:
+		- lazy propagation
+		- implicit binary search
+		- with another DS as nodes 
+		- dynamic 
+		- euler tour in trees
+	* Monotonic structures:
+		- monotonic queue 
+		- monotonic stack
+		- sliding window
+	* Sqrt Decomposition
+	* Mo Algorithm
+	* Sparse Table:
+		- 1D
+	* Longest Common Ancestor:
+		- Sparse Table
+		- Euler Tour with RMQ
+		- Euler Tour with ST
+	* Venice Technique
+	
+	Middle: 
+	* Cumulative Table:
+		- ND
+	* Disjoint Set: 
+		- dsu on tree
+		- dsu with rollbacks
+	* Fenwick Tree:
+		- 2D
+		- dynamic
+		- with update in range
+		- with binary lifting
+	* Segment Tree:
+		- persistent
+	* Sparse Table:
+		- 2D
+	* Heavy Light Decomposition
+	* Centroid Decomposition
+	* Convex Hull Trick
+	* Li Chao Tree
+	
+	Advanced
+	* Segment Tree:
+		- polynomial
+	* Treap
+	* Link Cut Tree

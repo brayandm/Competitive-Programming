@@ -252,7 +252,7 @@ struct HASHING
         HASH tp;
         for(int j = 0 ; j < K ; j++)
         {
-            tp.hs.push_back((H[a+1][j]+random_hash.mod[j]-H[b+2][j]*hash_powers.P[b-a+1][j]%random_hash.mod[j])%random_hash.mod[j]);
+            tp.hs.push_back((rH[a+1][j]+random_hash.mod[j]-rH[b+2][j]*hash_powers.P[b-a+1][j]%random_hash.mod[j])%random_hash.mod[j]);
         }
         return tp;
     }
@@ -263,7 +263,7 @@ struct HASHING
         HASH tp;
         for(int j = 0 ; j < K ; j++)
         {
-            tp.hs.push_back((H[b][j]+random_hash.mod[j]-H[a-1][j])%random_hash.mod[j]);
+            tp.hs.push_back((pH[b][j]+random_hash.mod[j]-pH[a-1][j])%random_hash.mod[j]);
         }
         return tp;
     }
